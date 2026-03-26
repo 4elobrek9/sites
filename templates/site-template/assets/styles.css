@@ -1,0 +1,27 @@
+:root {
+  --bg: #0f172a;
+  --accent: #22d3ee;
+  --text: #f8fafc;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: Inter, system-ui, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg), #1e293b);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, white 45%);
+  border-radius: .9rem;
+  padding: 1rem;
+  background: #ffffff12;
+}
